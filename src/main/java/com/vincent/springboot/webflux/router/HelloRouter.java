@@ -9,6 +9,10 @@ import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.RouterFunctions;
 import org.springframework.web.reactive.function.server.ServerResponse;
 
+/**
+ * 基于功能
+ * @author vincent.li
+ */
 @Component
 public class HelloRouter {
 

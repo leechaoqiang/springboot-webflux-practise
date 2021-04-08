@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 
+/**
+ * @author vincent.li
+ */
 @RestController
 public class HealthCheckController {
 
@@ -30,4 +33,5 @@ public class HealthCheckController {
                 "applicationName", applicationName,
                 "serverPort",serverPort);
     }
+
 }

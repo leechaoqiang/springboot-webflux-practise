@@ -6,6 +6,10 @@ import org.springframework.web.reactive.function.server.ServerRequest;
 
 import java.util.Map;
 
+/**
+ * 自定义异常错误信息
+ * @author vincent.li
+ */
 @Component
 public class GlobalErrorAttributes extends DefaultErrorAttributes {
 
@@ -24,9 +28,7 @@ public class GlobalErrorAttributes extends DefaultErrorAttributes {
         }
 
         map.put("exception", "SystemException");
-        map.put("message", "System Error , Check logs!");
         map.put("status", "500");
-        map.put("error", " System Error ");
         return map;
     }
 }
